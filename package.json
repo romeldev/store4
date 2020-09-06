@@ -1,0 +1,26 @@
+{
+  "name": "store4",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.12.0",
+    "@nuxtjs/dotenv": "^1.4.1",
+    "@nuxtjs/pwa": "^3.0.0-beta.20",
+    "js-cookie": "^2.2.1",
+    "nuxt": "^2.14.0",
+    "object-to-formdata": "^3.0.6",
+    "vform": "^1.0.1"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.14.0",
+    "@mdi/js": "^5.5.55",
+    "@nuxtjs/vuetify": "^1.11.2",
+    "material-design-icons-iconfont": "^6.0.2"
+  }
+}
