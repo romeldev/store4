@@ -1,6 +1,3 @@
-import axios from 'axios'
-axios.defaults.baseURL = process.env.URL_API
-
 export const state = () => ({
     items: [],
 })
@@ -15,9 +12,9 @@ export const mutations = {
 
 export const actions = {
 
-    getDataItems() {
+    getDataItems( {commit}) {
         return new Promise( (resolve, reject) => {
-            axios.get('categories')
+            this.$axios.get('categories')
             .then( res => { resolve(res) })
             .catch( err => { reject(err) })
         })

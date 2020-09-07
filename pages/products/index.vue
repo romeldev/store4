@@ -192,6 +192,8 @@ import { objectToFormData  } from 'object-to-formdata';
 
 export default {
 
+    middleware: 'auth',
+
     data() {
         return {
             title: 'PRODUCTS',

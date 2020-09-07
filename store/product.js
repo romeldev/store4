@@ -16,7 +16,7 @@ export const mutations = {
 export const actions = {
     getDataItems(context, params) {
         return new Promise( (resolve, reject) => {
-            axios.get('products', {params})
+            this.$axios.get('products', {params})
             .then( res => { resolve(res) })
             .catch( err => { reject(err) })
         })
