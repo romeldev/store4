@@ -1,5 +1,4 @@
 <template>
-
     <v-card max-width="300" class="mx-auto">
         <v-card-title primary-title class="text-center">
             <span class="text-center">Login</span>
@@ -16,15 +15,10 @@
             </v-btn>
         </v-card-text>
     </v-card>
-    
-
-    
-
 </template>
 
 <script>
 export default {
-
     methods: {
         loginFacebook() {
             this.$auth.loginWith('facebook')

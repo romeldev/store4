@@ -68,17 +68,15 @@ export default {
     auth: {
         strategies: {
             facebook: {
-                client_id: '656657234979426',//app_id
-                userinfo_endpoint: 'https://graph.facebook.com/v2.12/me?fields=about,name,picture{url},email,birthday',
+                client_id: process.env.FACEBOOK_CLIENT_ID,//app_id
+                userinfo_endpoint: process.env.FACEBOOK_USER_ENDPOINT,
                 scope: ['public_profile', 'email', 'user_birthday']
             },
             'laravel.passport': {
-                url: 'http://store-api.test',
-                client_id: '3',
-                client_secret: 'Z6QANKf5d5eeuqbpMDCBxtBuktu1HLdZ4BvebeCn',
-                userinfo_endpoint: 'http://store-api.test/api/user',
-                // scope: [ 'email'],
-                // callback: '/login',
+                url: process.env.URL_API,
+                client_id: process.env.PASSPORT_CLIENT_ID,
+                client_secret: process.env.PASSPORT_CLIENT_SECRET,
+                userinfo_endpoint: process.env.URL_API+'/api/user',
             },
         }
     },
@@ -87,7 +85,7 @@ export default {
     ** See https://axios.nuxtjs.org/options
     */
     axios: {
-        baseURL: process.env.URL_API,
+        baseURL: process.env.URL_API+'/api/',
         // credentials: true,
     },
 

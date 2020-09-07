@@ -1,33 +1,12 @@
 <template>
     <div>
-        <div v-if="this.$auth.loggedIn">
-            {{ this.$auth.user.name }}
-            <!-- <img :src="this.$auth.user.picture.data.url" /> -->
-        </div>
-
-        <div v-else>
-            No logeado
-        </div>
+        index
     </div>
 </template>
 
 <script>
 
 export default {
-    mounted() {
-        this.getUser()
-    },
 
-    methods: {
-        getUser(){
-            this.$axios.get('user')
-            .then( res => {
-                console.log('user', res)
-            })
-            .catch( err => {
-                console.log('err', err)
-            })
-        }
-    }
 }
 </script>
