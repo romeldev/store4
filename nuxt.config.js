@@ -113,9 +113,9 @@ export default {
             }
         },
 
-        icons: {
-            iconfont: 'mdiSvg',
-        },
+        // icons: {
+        //     iconfont: 'mdiSvg',
+        // },
     },
     /*
     ** Build configuration
